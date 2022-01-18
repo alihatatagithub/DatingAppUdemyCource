@@ -1,11 +1,20 @@
 Important Note:
 		Json FOrmatted Code is Cammel Case
-dotnet new sln
-dotnet new webapi -o API
-dotnet sln add API
-dotnet dev-certs https --trust
-dotnet watch run
-dotnet new gitignore
+	dotnet new sln
+	dotnet new webapi -o API
+	dotnet sln add API
+	dotnet dev-certs https --trust
+	dotnet watch run
+
+GitCommand
+	git init
+	dotnet new gitignore
+	Stages
+	from ... commit => commit
+	Make NewRepo in GitHub
+	>git remote add origin https://github.com/alihatatagithub/DatingAppUdemyCource.git
+	>git push -u origin master
+
 
 
 Extension FOr VS Code
@@ -19,8 +28,38 @@ Package
 	Microsoft.EntityFrameworkCore.Sqlite
 	Microsoft.EntityFrameworkCore.Design
 	dotnet tool install --global dotnet-ef --version 6.0.1    (To Make Migration)
+	>>>>System.IdentityModel.Tokens.Jwt    // For TokenService And TokenDescritor(Alg)
+	>>>>Microsoft.AspNetCore.Authentication.JwtBearer by Microsoft // For StartUpCLass AddAuth
 	dotnet ef migrations add InitialCreate -o Data\Migrations
+	dotnet ef database update
+	dotnet ef database drop
 	
 	
 
 From Code\Preference\settings\FontSize 17
+
+In Lseeon 4 Part 4 Add PostMan Collection
+
+Angular 
+	Extension :
+		Angular Language Service
+		Angular Snippets (Version 12)
+		Bracket Pair Colorizer 2
+Package
+		NGX Bootstrap and Compatability
+		in Cource Will Use BootstrapV4
+
+		ng add ngx-bootstrap (ngx V 8.0.0)
+		We Need to modify in Angular.json line 26 
+		 "styles": [
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+		npm install font-awesome
+
+ToAdd Certificate  In line 65(angular.json{serve })
+			  "options": {
+            "ssl": true,
+              "sslKey": "./ssl/server.key",
+              "sslCert": "./ssl/server.crt"
+              
+          },
+
